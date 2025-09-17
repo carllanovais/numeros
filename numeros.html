@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Exercício Array PHP</title>
+
+</head>
+<body>
+<div class="box">
+    <form method="post" action="../numeros/numeros.php">
+<h2>Exercício com Array</h2>
+<?php
+       // a) Criar array com números de 1 a 10
+       $numeros = range(1, 10);
+       // a) Exibir todos os números do array em tabela
+       echo "<h3>Números do array:</h3>";
+       echo "<table><tr>";
+       foreach ($numeros as $n) {
+           echo "<td>$n</td>";
+       }
+       echo "</tr></table>";
+       // b) Calcular e exibir a soma
+       $soma = array_sum($numeros);
+       echo "<p><strong>Soma de todos os números:</strong> $soma</p>";
+       // c) Inverter e exibir em tabela
+       $invertido = array_reverse($numeros);
+       echo "<h3>Array invertido:</h3>";
+       echo "<table><tr>";
+       foreach ($invertido as $n) {
+           echo "<td>$n</td>";
+       }
+       echo "</tr></table>";
+       ?>
+</div>
+</body>
+</html>
+ 
+ 
