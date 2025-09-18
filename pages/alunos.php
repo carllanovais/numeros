@@ -1,28 +1,50 @@
 <?php
-//array de alunos
+
+// Criar array com 3 alunos
+
 $alunos = [
-["alunos" =>"Carlla", "idade" => 28, "notaFinal" => 6.4],
-["alunos" =>"Samira", "idade" => 22, "notaFinal" => 8.4],
-["alunos" =>"Letica", "idade" => 23, "notaFinal" => 9.4],
-["alunos" =>"Carlos", "idade" => 23, "notaFinal" => 9.3],
-["alunos" =>"Leandro", "idade" => 25, "notaFinal" => 7.2],
-["alunos" =>"Bianca", "idade" => 27, "notaFinal" => 6.1],
-["alunos" =>"Vitoria", "idade" => 34, "notaFinal" => 5.8],
-["alunos" => "Leonardo", "idade" => 21, "notaFinal" => 5.0],
-["alunos" => "Gabriela", "idade" => 21, "notaFinal" => 5.0],
-["alunos" =>"Julio", "idade" => 29, "notaFinal" => 7.5]
+
+    ["nome" => "Juca", "idade" => 27, "notaFinal" => 8.5],
+
+    ["nome" => "Maria", "idade" => 22, "notaFinal" => 9.0],
+
+    ["nome" => "Pedro", "idade" => 25, "notaFinal" => 7.5]
+
 ];
- 
- 
-$soma = 0;
-// Mostrar informações e somar notas
-foreach ($alunos as $a) {
-   echo "alunos: {$a['alunos']}<br>";
-   echo "idade: {$a['idade']}<br>";
-   echo "notaFinal: {$a['notaFinal']}<br><br>";
-   $soma += $a['notaFinal'];
+
+// Adicionar mais 10 alunos
+
+$alunos[] = ["nome" => "Ana", "idade" => 20, "notaFinal" => 8.0];
+
+$alunos[] = ["nome" => "Lucas", "idade" => 24, "notaFinal" => 6.5];
+
+$alunos[] = ["nome" => "Carla", "idade" => 21, "notaFinal" => 9.2];
+
+$alunos[] = ["nome" => "Rafael", "idade" => 26, "notaFinal" => 7.0];
+
+$alunos[] = ["nome" => "Fernanda", "idade" => 23, "notaFinal" => 8.8];
+
+$alunos[] = ["nome" => "Paulo", "idade" => 28, "notaFinal" => 6.9];
+
+$alunos[] = ["nome" => "Juliana", "idade" => 22, "notaFinal" => 9.5];
+
+$alunos[] = ["nome" => "Diego", "idade" => 27, "notaFinal" => 7.8];
+
+$alunos[] = ["nome" => "Camila", "idade" => 24, "notaFinal" => 8.3];
+
+$alunos[] = ["nome" => "André", "idade" => 25, "notaFinal" => 7.2];
+
+// Calcular média das notas
+
+$somaNotas = 0;
+
+foreach ($alunos as $aluno) {
+
+    $somaNotas += $aluno["notaFinal"];
+
 }
-// Média
-$media = $soma / count($alunos);
-echo "Média das notas: " . number_format($media, 2, ',', '.');
+
+$media = $somaNotas / count($alunos);
+
 ?>
+ 
