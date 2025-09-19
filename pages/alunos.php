@@ -7,7 +7,7 @@ $alunos = [
 ];
 $alunos[] = ["nome" => "Ana", "idade" => 20, "notaFinal" => 8.0];
 $alunos[] = ["nome" => "Lucas", "idade" => 24, "notaFinal" => 6.5];
-$alunos[] = ["nome" => "Carlla", "idade" => 21, "notaFinal" => 9.2];
+$alunos[] = ["nome" => "Carlla", "idade" => 28, "notaFinal" => 6.2];
 $alunos[] = ["nome" => "Rafael", "idade" => 26, "notaFinal" => 7.0];
 $alunos[] = ["nome" => "Fernanda", "idade" => 23, "notaFinal" => 8.8];
 $alunos[] = ["nome" => "Paulo", "idade" => 28, "notaFinal" => 6.9];
